@@ -78,6 +78,10 @@ class Person
         return $this;
     }
 
+    public function getName(){
+        return $this->firstName . ' ' .$this->lastName; 
+    }
+
     public function displayInfo()
     {
         return "Hello my name is $this->firstName $this->lastName. I am $this->age years old.";
